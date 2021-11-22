@@ -1,0 +1,6 @@
+========= Icons and Buttons =========
+https://boxicons.com/
+https://github.com/atisawd/boxicons
+
+========= Fonts =========
+https://fonts.google.com/

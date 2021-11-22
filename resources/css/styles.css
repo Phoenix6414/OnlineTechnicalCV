@@ -1,0 +1,95 @@
+/* Setup, vars properly this time, don't wanna redo of P2 with all the redundant code */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* CSS Vars */
+:root{
+    --header-hight: 3rem;
+    
+    /* the rainbox XD (colours) */
+    --title-color: #0b0a0a;
+    --text-color: #403a3a;
+    --text-color-l: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #f0efef;
+    --body-color:#fcfcfc;
+
+    /* Fonts */
+    --body-font: 'Montserrat', sans-serif;;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .928rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: 813rem;
+
+    /* Font Weighting */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* Margen Pre-sets */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+
+    /* z axes */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+/* base */
+*,::before, ::after{
+       box-sizing: border-box; 
+};
+
+/* html scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Class mod - reduce size and print */
+body{
+    margin: 0 0 var(--header-hight) 0 ;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+proPic{
+    max-width: 100%;
+    height: auto;
+}
+/* CSS Class */
+/* Sections */
+.section{
+    padding: 1.5rem 0;
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
