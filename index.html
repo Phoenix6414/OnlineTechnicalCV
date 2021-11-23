@@ -2,17 +2,190 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- css links -->
-        <!-- own stylesheet -->
-        <link rel="stylesheet" href="resources/css/styles.css">
         <!-- icons and buttons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+        <!-- own stylesheet -->
+        <link rel="stylesheet" href="resources/css/styles.css">
+        
         <title>Technical CV</title>
     </head>
     <body>
+        <header class="l-header" id="header">
+             <nav class="nav container">
+
+                 <a href="#" class="nav-logo">Navigate</a>
+                 
+                 <div class="nav-menu" id="navMenu">
+                     <ul class="nav-list">
+                         <li class="nav-item">
+                             <a href="#home" class="nav-link active-link">
+                                <i class='bx bxs-home nav-icon'></i>Home
+                             </a>
+                         </li>
+                         <li class="nav-item">
+                            <a href="#profile" class="nav-link">
+                                <i class='bx bxs-user nav-icon' ></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">
+                                <i class='bx bxs-graduation nav-icon'></i>Education
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#experience" class="nav-link">
+                                <i class='bx bxs-briefcase-alt nav-icon'></i>Work Experience
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">
+                                <i class='bx bxs-brain nav-icon'></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#certifications" class="nav-link">
+                                <i class='bx bxs-certification nav-icon'></i>Certifications
+                            </a>
+                        </li>                    
+                     </ul>
+                 </div>
+                 <div class="nav-toggle" id="navToggle">
+                    <i class='bx bxs-category'></i> 
+                 </div>
+             </nav>
+        </header>
+
+        <main class="l-main container">
+            <div class="cv">
+
+                <div class="cv-left">
+                    <section class="home" id="home">
+                        <div class="home-container section grid">
+                            <div class="home-data grid">
+                                <img src="resources/imgs/profPic.jpg" alt="" class="home-img">
+                                <h1 class="home-title"><b>Willem Coetzee</b></h1>
+                                <h3 class="home-profession">Student</h3>
+                                
+                                <!-- <div>
+                                    <a download="" href="resouces/files/CV.pdf" class="home-btn-mobile">Download</a>
+                                </div> -->
+                            </div>
+
+                            <div class="home-add grid">
+                                <span class="home-info">
+                                    <i class='bx bxs-map home-icon' ></i>My address
+                                </span>
+                                <span class="home-info">
+                                    <i class='bx bxs-envelope home-icon' ></i>My Email
+                                </span>
+                                <span class="home-info">
+                                    <i class='bx bxs-phone home-icon' ></i>My phone
+                                </span>
+                            </div>
+                        </div>
+                        <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i>                    
+                    </section>
+                    <!-- dark/light theme -->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills-content grid">
+                            <ul class="skill-data">
+                                <li class="skill-name">
+                                     <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                     </span>Skill 1
+                                </li>
+
+                                <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 2
+                               </li>
+
+                               <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 3
+                                </li>
+                                <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 4
+                                </li>
+                            </ul>
+                            <ul class="skill-data">
+                                <li class="skill-name">
+                                     <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                     </span>Skill 1
+                                </li>
+
+                                <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 2
+                               </li>
+
+                               <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 3
+                                </li>
+                                <li class="skill-name">
+                                    <span class="home-icon">
+                                        <i class='bx bxs-brain'></i>
+                                    </span>Skill 4
+                                </li>
+                            </ul>
+                        </div>
+                    </section>                
+
+                </div>
+
+                <div class="cv-right">
+                    <section class="section">
+                        <h2 class="section-title">Title</h2>
+                        <div>
+                            
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Title</h2>
+                        <div>
+                            
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Title</h2>
+                        <div>
+                            
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Title</h2>
+                        <div>
+                            
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </main>
+        <!-- scroll to top -->
+        <a href="#" class="scroll-top" id="scrollTop">
+            <i class='bx bxs-up-arrow scroll-top-icon'></i>
+        </a>
+        
+        <script src=""></script>
         <script src="resources/js/main.js"></script>
     </body>
 </html>
