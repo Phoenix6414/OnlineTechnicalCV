@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('navToggle','navMenu')
 
-// remove menue - mobile
+// remove menue - small screen 
 const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
@@ -72,3 +72,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+

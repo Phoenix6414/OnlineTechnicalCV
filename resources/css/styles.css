@@ -13,7 +13,7 @@
     --text-color-l: #707070;
     --container-color: #FAFAFA;
     --container-color-alt: #f0efef;
-    --body-color:#fcfcfc;
+    --body-color:#d3d3d3;
 
     /* Fonts */
     --body-font: 'Montserrat', sans-serif;;
@@ -124,6 +124,7 @@ a{
 }
 
 .section-title{
+    padding-top: calc(var(--header-hight) + 2.5rem);
     font-size: var(--h2-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
@@ -171,6 +172,7 @@ a{
     transition: .3s;
 }
 .l-main{
+    padding-right: 3rem;    
     width: 100%;
     position: relative;
     top: var(--header-hight);
@@ -216,6 +218,9 @@ a{
     }
     .l-header{
         display: none;
+    }
+    .l-main{
+        padding: .5rem 15rem;
     }
     .cv{
         display: grid;
