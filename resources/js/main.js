@@ -73,3 +73,23 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+// Download PDF
+// Initialize jsPDF Class
+var doc = new jsPDF();
+// takinding the html div class #cv
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+ 
+// id the button that does the dowload
+$('#genPdf').click(function () {
+    //setting the margins of the pages
+    doc.fromHTML($('#cv').html(), 15, 15, {
+        'width': 700,
+        'elementHandlers': specialElementHandlers,        
+    });
+    //this does the actual saving XD
+    doc.save('CV_WC.pdf');
+});

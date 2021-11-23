@@ -58,12 +58,12 @@
             </div>
             <div class="nav-toggle" id="navToggle">
                 <i class='bx bxs-category'></i>
-            </div>
+            </div>            
         </nav>
     </header>
-
+    <!-- Start of page body -->
     <main class="l-main container">
-        <div class="cv">
+        <div class="cv" id="cv">
 
             <div class="cv-left">
                 <section class="home" id="home">
@@ -74,8 +74,8 @@
                             <h3 class="career">Student</h3>
 
                             <!-- <div>
-                                    <a download="" href="resouces/files/CV.pdf" class="home-btn-mobile">Download</a>
-                                </div> -->
+                                <button class="btnDwnl" id="genPdf">Download CV</button>
+                            </div> -->
                         </div>
 
                         <div class="home-add grid">
@@ -89,9 +89,23 @@
                                 <i class='bx bxs-phone home-icon'></i>My phone
                             </span>
                         </div>
+
+                        <!-- <div class="home-add grid">
+                            <span class="home-info">
+                                <i class='bx bxl-linkedin-square home-icon'></i>LinkedIn
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxl-instagram home-icon'></i>Insta
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxl-facebook-circle home-icon' ></i>Facebook
+                            </span>
+                        </div> -->
                     </div>
                     <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i>
+                    <i class='bx bxs-download btn-dwnl' id="genPdf"></i>
                 </section>
+
                 <!-- dark/light theme -->
                 <section class="section" id="skills">
                     <h2 class="section-title">Skills</h2>
@@ -300,10 +314,10 @@
         </a>
 
     </main>
-    <!-- scroll to top -->
 
 
-    <script src=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="resources/js/main.js"></script>
 </body>
 

@@ -67,10 +67,22 @@ body.dark-theme{
     top: 2.2rem;
     display: flex;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .change-theme:hover{
+    color: var(--title-color);
+}
+.btn-dwnl{
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn-dwnl:hover{
     color: var(--title-color);
 }
 .scroll-top-icon{
@@ -172,7 +184,7 @@ a{
     transition: .3s;
 }
 .l-main{
-    padding-right: 3rem;    
+    padding-right: 1.5rem;    
     width: 100%;
     position: relative;
     top: var(--header-hight);
@@ -223,6 +235,7 @@ a{
         padding: .5rem 15rem;
     }
     .cv{
+        border-radius: 2.5rem;
         display: grid;
         grid-template-columns: .5fr 1fr;
         background-color: var(--container-color);
@@ -234,6 +247,7 @@ a{
     /* padding for resizing */
     .cv-left,
     .cv-right{
+        /* border-radius: 2.5rem; */
         padding: 0 1.5rem; 
     }
     .section-title,
