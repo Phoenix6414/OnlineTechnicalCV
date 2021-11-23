@@ -1,3 +1,7 @@
+========= Main ref =========
+=> used for setup and spacing, don't reinvent the wheel as they say XD
+https://www.youtube.com/watch?v=oYjseP_Qhv4&t=1203s
+
 ========= Icons and Buttons =========
 https://boxicons.com/
 https://github.com/atisawd/boxicons
@@ -5,5 +9,8 @@ https://github.com/atisawd/boxicons
 ========= Fonts =========
 https://fonts.google.com/
 
-Menue SHow/Hide
+========= Menue SHow/Hide =========
 https://github.com/bedimcode/responsive-website-restaurant
+
+========= Hosting GitHub Pages =========
+https://www.youtube.com/watch?v=8hrJ4oN1u_8
