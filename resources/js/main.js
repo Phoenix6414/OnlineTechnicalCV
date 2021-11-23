@@ -93,3 +93,21 @@ $('#genPdf').click(function () {
     //this does the actual saving XD
     doc.save('CV_WC.pdf');
 });
+
+// get GitHub
+// const btnRepo = document.getElementById("btnRepo")
+// btnRepo.addEventListener("click", getRepo)
+// async function getRepo(){
+//     const url = "Https://api.github.com/search/repositories?q=full_name:="
+//     const response = await fetch(url)
+//     const result = await response.json()
+
+//     result.items.forEach(i=>{
+//         const anchor = document.createElement("a")
+//         anchor.href = i.html_url
+//         anchor.textContent = i.full_name;
+//         divResult.appendChild(anchor)
+//         divResult.appendChild(document.createElement("br"))
+//     })
+    
+// }
