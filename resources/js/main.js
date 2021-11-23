@@ -13,7 +13,7 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('navToggle','navMenu')
 
-// remove menue - mobile
+// remove menue - small screen 
 const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
@@ -72,3 +72,42 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Download PDF
+// Initialize jsPDF Class
+var doc = new jsPDF();
+// takinding the html div class #cv
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+ 
+// id the button that does the dowload
+$('#genPdf').click(function () {
+    //setting the margins of the pages
+    doc.fromHTML($('#cv').html(), 15, 15, {
+        'width': 700,
+        'elementHandlers': specialElementHandlers,        
+    });
+    //this does the actual saving XD
+    doc.save('CV_WC.pdf');
+});
+
+// get GitHub
+// const btnRepo = document.getElementById("btnRepo")
+// btnRepo.addEventListener("click", getRepo)
+// async function getRepo(){
+//     const url = "Https://api.github.com/search/repositories?q=full_name:="
+//     const response = await fetch(url)
+//     const result = await response.json()
+
+//     result.items.forEach(i=>{
+//         const anchor = document.createElement("a")
+//         anchor.href = i.html_url
+//         anchor.textContent = i.full_name;
+//         divResult.appendChild(anchor)
+//         divResult.appendChild(document.createElement("br"))
+//     })
+    
+// }

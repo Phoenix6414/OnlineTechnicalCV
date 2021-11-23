@@ -1,302 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- css links -->
-        <!-- icons and buttons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- own stylesheet -->
-        <link rel="stylesheet" href="resources/css/styles.css">
-        
-        <title>Technical CV</title>
-    </head>
-    <body>
-        <header class="l-header" id="header">
-             <nav class="nav container">
+    <!-- css links -->
+    <!-- icons and buttons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-                 <a href="#" class="nav-logo">Navigate</a>
-                 
-                 <div class="nav-menu" id="navMenu">
-                     <ul class="nav-list">
-                         <li class="nav-item">
-                             <a href="#home" class="nav-link active-link">
-                                <i class='bx bxs-home nav-icon'></i>Home
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                            <a href="#profile" class="nav-link">
-                                <i class='bx bxs-user nav-icon' ></i>Profile
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#education" class="nav-link">
-                                <i class='bx bxs-graduation nav-icon'></i>Education
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience" class="nav-link">
-                                <i class='bx bxs-briefcase-alt nav-icon'></i>Work Experience
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">
-                                <i class='bx bxs-brain nav-icon'></i>Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cert" class="nav-link">
-                                <i class='bx bxs-certification nav-icon'></i>Certifications
-                            </a>
-                        </li>                    
-                     </ul>
-                 </div>
-                 <div class="nav-toggle" id="navToggle">
-                    <i class='bx bxs-category'></i> 
-                 </div>
-             </nav>
-        </header>
+    <!-- own stylesheet -->
+    <link rel="stylesheet" href="resources/css/styles.css">
 
-        <main class="l-main container">
-            <div class="cv">
+    <title>Technical CV</title>
+</head>
 
-                <div class="cv-left">
-                    <section class="home" id="home">
-                        <div class="home-container section grid">
-                            <div class="home-data grid" id="profile">
-                                <img src="resources/imgs/profPic.jpg" alt="" class="home-img">
-                                <h1 class="home-title"><b>Willem Coetzee</b></h1>
-                                <h3 class="home-profession">Student</h3>
-                                
-                                <!-- <div>
-                                    <a download="" href="resouces/files/CV.pdf" class="home-btn-mobile">Download</a>
-                                </div> -->
-                            </div>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav container">
 
-                            <div class="home-add grid">
-                                <span class="home-info">
-                                    <i class='bx bxs-map home-icon' ></i>My address
-                                </span>
-                                <span class="home-info">
-                                    <i class='bx bxs-envelope home-icon' ></i>My Email
-                                </span>
-                                <span class="home-info">
-                                    <i class='bx bxs-phone home-icon' ></i>My phone
-                                </span>
-                            </div>
+            <a href="#" class="nav-logo">Navigate</a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class='bx bxs-home nav-icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" class="nav-link">
+                            <i class='bx bxs-user nav-icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">
+                            <i class='bx bxs-graduation nav-icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class='bx bxs-briefcase-alt nav-icon'></i>Work Experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class='bx bxs-brain nav-icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cert" class="nav-link">
+                            <i class='bx bxs-certification nav-icon'></i>Certifications
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class='bx bxs-category'></i>
+            </div>            
+        </nav>
+    </header>
+    <!-- Start of page body -->
+    <main class="l-main container">
+        <div class="cv" id="cv">
+
+            <div class="cv-left">
+                <section class="home" id="home">
+                    <div class="home-container section grid">
+                        <div class="home-data grid" id="profile">
+                            <img src="resources/imgs/profPic.jpg" alt="" class="home-img">
+                            <h1 class="home-title"><b>Willem Coetzee</b></h1>
+                            <h3 class="career">Student</h3>
+
+                            <!-- <div>
+                                <button class="btnDwnl" id="genPdf">Download CV</button>
+                            </div> -->
                         </div>
-                        <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i>                    
-                    </section>
-                    <!-- dark/light theme -->
-                    <section class="skill section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-                        <div class="skills-content grid">
-                            <ul class="skill-data">
-                                <li class="skill-name">
-                                     <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                     </span>3D Modelling with Blender 3D
-                                </li>
 
-                                <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>TurboCAD
-                               </li>
-
-                               <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>Administration
-                                </li>
-                                <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>Project Management
-                                </li>
-                            </ul>
-                            <ul class="skill-data">
-                                <li class="skill-name">
-                                     <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                     </span>Python
-                                </li>
-
-                                <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>C#
-                               </li>
-
-                               <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>Java
-                                </li>
-                                <li class="skill-name">
-                                    <span class="home-icon">
-                                        <i class='bx bxs-brain'></i>
-                                    </span>ASP.NET
-                                </li>
-                            </ul>
+                        <div class="home-add grid">
+                            <span class="home-info">
+                                <i class='bx bxs-map home-icon'></i>My address
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxs-envelope home-icon'></i>My Email
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxs-phone home-icon'></i>My phone
+                            </span>
                         </div>
-                    </section>                
-                </div>
 
-                <div class="cv-right">
-                    <section class="section" id="education">
-                        <div >
-                            <h2 class="section-title">Education</h2>
+                        <!-- <div class="home-add grid">
+                            <span class="home-info">
+                                <i class='bx bxl-linkedin-square home-icon'></i>LinkedIn
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxl-instagram home-icon'></i>Insta
+                            </span>
+                            <span class="home-info">
+                                <i class='bx bxl-facebook-circle home-icon' ></i>Facebook
+                            </span>
+                        </div> -->
+                    </div>
+                    <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i>
+                    <i class='bx bxs-download btn-dwnl' id="genPdf"></i>
+                </section>
+
+                <!-- dark/light theme -->
+                <section class="section" id="skills">
+                    <h2 class="section-title-noSpace">Skills</h2>
+                    <div class="skills-content grid">
+                        <ul class="skill-data">
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>3D Modelling with Blender 3D
+                            </li>
+
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>TurboCAD
+                            </li>
+
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>Administration
+                            </li>
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>Project Management
+                            </li>
+                        </ul>
+                        <ul class="skill-data">
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>Python
+                            </li>
+
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>C#
+                            </li>
+
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>Java
+                            </li>
+                            <li class="skill-name">
+                                <span class="home-icon">
+                                    <i class='bx bxs-brain'></i>
+                                </span>ASP.NET
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-content grid">
+                        <h2 class="section-title-noSpace">My Repo</h2>
+                        <span class="git-icon">                            
+                                <i class='bx bxl-github' id="btnRepo"></i>                            
+                        </span>                                 
+                    </div>
+                </section>
+            </div>
+
+            <div class="cv-right">
+                <section class="section" id="education">
+                    <div>
+                        <h1 class="section-title">Education</h1>
+                        <h2 class=inst>North-West University</h2>
+                        <h3 class="date">2019 - Current</h3>
+                        <div>
+                            <p>
+                                Undergraduate BSc. Information Technology
+                            <ul>
+                                <li class="li-lvl-1">- Distinctions in:</li>
+                                <li class="li-lvl-2">o Apps and Advanced User Interfaces</li>
+                                <li class="li-lvl-2">o Communication Skills</li>
+                                <li class="li-lvl-2">o Data Structures and Algorithms</li>
+                                <li class="li-lvl-2">o Data Analytics II</li>
+                                <li class="li-lvl-2">o Discrete Mathematics</li>
+                                <li class="li-lvl-1">- Member of Sub-Committee for Scientiae, ASA, for the term of
+                                    2018/2019</li>
+                                <li class="li-lvl-1">- Member of Scientiae, ASA, for the term of 2019/2020 with
+                                    portfolios for Archive and Social</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <br>
+
+                        <h2 class=inst>Hotazel College</h2>
+                        <h3 class="date">2013 - 2018</h3>
+                        <div>
+                            <p>
+                                High School
+                            <ul>
+                                <li class="li-lvl-1">- Matriculated with a Bachelors Degree:</li>
+                                <li class="li-lvl-1">- Distinctions in:</li>
+                                <li class="li-lvl-2">o Computer Applications Technology and Afrikaans First Additional
+                                    Language</li>
+                                <li class="li-lvl-1">- Member of Representative Council of Learners (2015-2018)</li>
+                                <li class="li-lvl-1">- Vice Chairperson of Executive Committee (2018)</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="experience">
+                    <div>
+
+                        <h2 class="section-title">Work Experience</h2>
+
+                        <div>
                             <h2 class=inst>North-West University</h2>
-                            <h3 class="date">2019 - Current</h3>
+                            <h3 class="j-roll">Student Assistant</h3>
+                            <h3 class="date">2021</h3>
                             <div>
+                                <p>Modules:</p>
+                                <ul>
+                                    <li class="li-lvl-1">- Apps and Advanced User Interfaces</li>
+                                    <li class="li-lvl-1">- Structured Programming</li>
+                                    <li class="li-lvl-1">- User Interface Programming I</li>
+                                </ul>
                                 <p>
-                                    Undergraduate BSc. Information Technology
-                                    <ul>
-                                        <li class="li-lvl-1">-  Distinctions in:</li>
-                                        <li class="li-lvl-2">o	Apps and Advanced User Interfaces</li>
-                                        <li class="li-lvl-2">o	Communication Skills</li>
-                                        <li class="li-lvl-2">o	Data Structures and Algorithms</li>
-                                        <li class="li-lvl-2">o	Data Analytics II</li>
-                                        <li class="li-lvl-2">o	Discrete Mathematics</li>
-                                        <li class="li-lvl-1">-	Member of Sub-Committee for Scientiae, ASA, for the term of 2018/2019</li>
-                                        <li class="li-lvl-1">-	Member of Scientiae, ASA, for the term of 2019/2020 with portfolios for Archive and Social</li>
-                                    </ul>
+                                    As a student assistant my responsibilities were to support the students during the
+                                    semester.
+                                    Providing them with feedback and advice regarding their module work.
                                 </p>
                             </div>
                             <br>
-    
-                            <h2 class=inst>Hotazel College</h2>
-                            <h3 class="date">2013 - 2018</h3>
+                        </div>
+
+                        <div>
+                            <h2 class=inst>North-West University</h2>
+                            <h3 class="j-roll">Tutor</h3>
+                            <h3 class="date">Feb 2021 – Jun 2021</h3>
                             <div>
+                                <p>Module:</p>
+                                <ul>
+                                    <li class="li-lvl-1">- Introduction to Computing and Programming</li>
+                                </ul>
                                 <p>
-                                    High School
-                                    <ul>
-                                        <li class="li-lvl-1">-	Matriculated with a Bachelors Degree:</li>
-                                        <li class="li-lvl-1">-	Distinctions in:</li>
-                                        <li class="li-lvl-2">o	Computer Applications Technology and Afrikaans First Additional Language</li>
-                                        <li class="li-lvl-1">-	Member of Representative Council of Learners (2015-2018)</li>
-                                        <li class="li-lvl-1">-	Vice Chairperson of Executive Committee (2018)</li>
-                                    </ul>
+                                    As Tutor my main responsibility was to provide additional support to the students
+                                    in order to firmly set their understanding in the modules work and help them achieve
+                                    the modules outcomes.
                                 </p>
                             </div>
+                            <br>
                         </div>
-                    </section>
 
-                    <section class="section" id="experience">
-                        <div >
-                            
-                            <h2 class="section-title">Work Experience</h2>
-                            
-                            <div>
-                                <h2 class=inst>North-West University</h2>
-                                <h3 class="j-roll">Student Assistant</h3>        
-                                <h3 class="date">2021</h3>                                    
-                                <div>
-                                    <p>Modules:</p>
-                                    <ul>
-                                        <li class="li-lvl-1">- Apps and Advanced User Interfaces (CMPG212)</li>
-                                        <li class="li-lvl-1">- Structured Programming (CMPG121)</li>
-                                        <li class="li-lvl-1">- User Interface Programming I (CMPG122)</li>                                                
-                                    </ul>
-                                    <p>                                                                                
-                                        As a student assistant my responsibilities were to support the students during the semester. 
-                                        Providing them with feedback and advice regarding their module work.
-                                    </p>
-                                </div>
-                                <br>
-                            </div>
-
-                            <div>                                
-                                <h2 class=inst>North-West University</h2>
-                                <h3 class="j-roll">Tutor</h3>        
-                                <h3 class="date">Feb 2021 – Jun 2021</h3>                                    
-                                <div>
-                                    <p>Module:</p>
-                                    <ul>
-                                        <li class="li-lvl-1">- Introduction to Computing and Programming (CMPG111)</li>                                                                                     
-                                    </ul>
-                                    <p>                                                                                
-                                        As Tutor my main responsibility was to provide additional support to the students 
-                                        in order to firmly set their understanding in the modules work and help them achieve 
-                                        the modules outcomes.
-                                    </p>
-                                </div>
-                                <br>
-                            </div>
-
-                            <div>
-                                <h2 class=inst>North-West University</h2>
-                                <h3 class="j-roll">Supplemental Instructor</h3>        
-                                <h3 class="date">Jul 2020 – Nov 2020</h3>                                    
-                                <div>
-                                    <p>Module:</p>
-                                    <ul>
-                                        <li class="li-lvl-1">- User Interface Programming I (CMPG122) </li>                                                                                      
-                                    </ul>
-                                    <p>                                                                                
-                                        My main responsibilities as an SI was to improve the students academic success. 
-                                        I provided supplementary sessions in which the module work was discussed in a 
-                                        constructive and interactive way allowing the students to ask questions and then 
-                                        guiding them to the right answers or helping them to ask the right questions.
-                                    </p>
-                                </div>
-                                <br>
-                            </div>
-
-                            <div>
-                                <h2 class=inst>North-West University</h2>
-                                <h3 class="j-roll">Student Assistant</h3>        
-                                <h3 class="date">Feb 2020 – Jun 2020</h3>                                    
-                                <div>
-                                    <p>Module:</p>
-                                    <ul>
-                                        <li class="li-lvl-1">- Introduction to Computing and Programming (CMPG111)</li>                                                                                      
-                                    </ul>
-                                    <p>                                                                                
-                                        As a student assistant my responsibilities were to support the students during the 
-                                        semester. Providing them with feedback and advice regarding their module work.
-                                    </p>
-                                </div>
-                                <br>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <section class="section" id="cert">
-                        <div >
-                            <h2 class="section-title">Certifications</h2>
-                            <ul>
-                                <li>TurboCAD (Computer Aided Design)</li>
-                                <li class="li-lvl-1">-	Completed training course for TurboCAD 2D Fundamentals </li>
-                                <li class="li-lvl-1">-	Completed training course for TurboCAD 3D Design</li>
-                                <li>Diploma in Theatre Technology</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section class="section">
-                        <h2 class="section-title">Title</h2>
                         <div>
-                            
+                            <h2 class=inst>North-West University</h2>
+                            <h3 class="j-roll">Supplemental Instructor</h3>
+                            <h3 class="date">Jul 2020 – Nov 2020</h3>
+                            <div>
+                                <p>Module:</p>
+                                <ul>
+                                    <li class="li-lvl-1">- User Interface Programming I</li>
+                                </ul>
+                                <p>
+                                    My main responsibilities as an SI was to improve the students academic success.
+                                    I provided supplementary sessions in which the module work was discussed in a
+                                    constructive and interactive way allowing the students to ask questions and then
+                                    guiding them to the right answers or helping them to ask the right questions.
+                                </p>
+                            </div>
+                            <br>
                         </div>
-                    </section>
 
-                </div>
+                        <div>
+                            <h2 class=inst>North-West University</h2>
+                            <h3 class="j-roll">Student Assistant</h3>
+                            <h3 class="date">Feb 2020 – Jun 2020</h3>
+                            <div>
+                                <p>Module:</p>
+                                <ul>
+                                    <li class="li-lvl-1">- Introduction to Computing and Programming (CMPG111)</li>
+                                </ul>
+                                <p>
+                                    As a student assistant my responsibilities were to support the students during the
+                                    semester. Providing them with feedback and advice regarding their module work.
+                                </p>
+                            </div>
+                            <br>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="section" id="cert">
+                    <div>
+                        <h2 class="section-title">Certifications</h2>
+                        <ul>
+                            <li>TurboCAD (Computer Aided Design)</li>
+                            <li class="li-lvl-1">- Completed training course for TurboCAD 2D Fundamentals </li>
+                            <li class="li-lvl-1">- Completed training course for TurboCAD 3D Design</li>
+                            <li>Diploma in Theatre Technology</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Title</h2>
+                    <div>
+
+                    </div>
+                </section>
 
             </div>
-            <a href="#" class="scroll-top" id="scrollTop">
-                <i class='bx bxs-chevrons-up scroll-top-icon' ></i>
-            </a>
 
-        </main>
-        <!-- scroll to top -->
-        
-        
-        <script src=""></script>
-        <script src="resources/js/main.js"></script>
-    </body>
+        </div>
+        <a href="#" class="scroll-top" id="scrollTop">
+            <i class='bx bxs-chevrons-up scroll-top-icon'></i>
+        </a>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="resources/js/main.js"></script>
+</body>
+
 </html>

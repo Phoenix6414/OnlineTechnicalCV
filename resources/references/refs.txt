@@ -1,9 +1,26 @@
+========= Main ref =========
+=> used for setup and spacing, don't reinvent the wheel as they say XD
+https://www.youtube.com/watch?v=oYjseP_Qhv4&t=1203s
+
 ========= Icons and Buttons =========
 https://boxicons.com/
 https://github.com/atisawd/boxicons
 
+==> fire
+<i class='bx bxs-hot'></i>
+==> drop
+<i class='bx bxs-droplet' ></i>
+==> grad cap
+<i class='bx bxs-graduation'></i>
 ========= Fonts =========
 https://fonts.google.com/
 
-Menue SHow/Hide
+========= Menue SHow/Hide =========
 https://github.com/bedimcode/responsive-website-restaurant
+
+========= Hosting GitHub Pages =========
+https://www.youtube.com/watch?v=8hrJ4oN1u_8
+
+========= Download HTML as PDF =========
+https://phpcoder.tech/download-html-page-as-pdf-using-javascript/
+https://stackoverflow.com/questions/17293135/download-a-div-in-a-html-page-as-pdf-using-javascript
