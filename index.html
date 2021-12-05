@@ -16,7 +16,7 @@
     <title>Technical CV</title>
 </head>
 
-<body>
+<body onload="getInfo();">
     <header class="l-header" id="header">
         <nav class="nav container">
 
@@ -80,20 +80,22 @@
 
                         <div class="home-add grid">
                             <span class="home-info">
-                                <i class='bx bxs-map home-icon'></i>My address
+                                <i class='bx bxs-map home-icon'></i>Potchefstroom, South Africa
                             </span>
                             <span class="home-info">
-                                <i class='bx bxs-envelope home-icon'></i>My Email
+                                <i class='bx bxs-envelope home-icon'></i>willem.coetzee@gmail.com
                             </span>
                             <span class="home-info">
-                                <i class='bx bxs-phone home-icon'></i>My phone
+                                <i class='bx bxs-phone home-icon'></i>072 728 1234
                             </span>
                             <span class="home-info">
-                                <i class='bx bxl-linkedin-square home-icon'></i>LinkedIn
+                                <i class='bx bxl-linkedin-square home-icon'></i>
+                                <a style="color: inherit;" href="https://www.linkedin.com/in/willem-coetzee-4901641b5">LinkedIn</a>
                             </span>
                             <span class="home-info">                            
-                                <i class='bx bxl-github home-icon' id="btnRepo"></i>GitHub
-                        </span>
+                                <i class='bx bxl-github home-icon' id="btnRepo"></i>
+                                <a style="color: inherit;" href="https://github.com/Phoenix6414">GitHub</a>
+                            </span>
                         </div>
 
                         <!-- <div class="home-add grid">
@@ -109,7 +111,7 @@
                         </div> -->
                     </div>
                     <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i>
-                    <i class='bx bxs-download btn-dwnl' id="genPdf"></i>
+                    <i class='bx bxs-download btn-dwnl' download=""></i>
                 </section>
 
                 <!-- dark/light theme -->
@@ -164,11 +166,13 @@
                                 </span>ASP.NET
                             </li>
                         </ul>
-                    </div>
-                    <div class="skills-content grid" id="github" onloadstart="getInto();">
-                        <h2 class="section-title">My GitHub</h2>                        
+                    </div>                    
+                </section>
+                <section class="section">
+                    <div class="skills-content grid" id="github" >
+                        <h2 class="section-title">My GitHub</h2>                    
                         <div class="git-prof-left-container">
-                            <div class="gitProPic" id="gitProPic"></div>
+                            <div class="gitProPic gitProPicImg" id="gitProPic"></div>
                         </div>
                         <div class="git-prof-right-container">
                             <div class="git-username">
@@ -177,11 +181,13 @@
                             <div class="git-bio">
                                 <p id=gitBio></p>
                             </div>
-                            <div class="git-info">
-                                <ul>
-                                    <li id="followers"></li>
-                                    <li id="following"></li>
-                                </ul>
+                            <div class="git-ff-grid">
+                                <span>
+                                    <i id="followers"></i>
+                                </span>                                 
+                                <span>
+                                    <i id="following"></i>
+                                </span>                                
                             </div>
                         </div>
                     </div>
@@ -324,14 +330,6 @@
                         </ul>
                     </div>
                 </section>
-
-                <section class="section">
-                    <h2 class="section-title">Title</h2>
-                    <div>
-
-                    </div>
-                </section>
-
             </div>
 
         </div>
@@ -342,7 +340,7 @@
     </main>
 
     <script>
-        function getInto(){
+        function getInfo(){
             const name = 'Phoenix6414'
             fetch(`https://api.github.com/users/${name}`)
             .then(response=>response.json().then(data=>{
@@ -350,7 +348,7 @@
                 document.getElementById('gitUsername').innerHTML=data.name;
                 document.getElementById('gitBio').innerHTML=data.bio;
                 document.getElementById('followers').innerHTML=data.followers + " Followers";
-                document.getElementById('follwoing').innerHTML=data.following + " Following";
+                document.getElementById('following').innerHTML=data.following + " Following";
                 document.getElementById('gitProPic').innerHTML=`<img src="${data.avatar_url}" />`
             }))
         }
