@@ -24,3 +24,7 @@ https://www.youtube.com/watch?v=8hrJ4oN1u_8
 ========= Download HTML as PDF =========
 https://phpcoder.tech/download-html-page-as-pdf-using-javascript/
 https://stackoverflow.com/questions/17293135/download-a-div-in-a-html-page-as-pdf-using-javascript
+
+
+========= GitHub API =========
+https://www.youtube.com/watch?v=5QlE6o-iYcE

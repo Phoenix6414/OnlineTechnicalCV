@@ -370,3 +370,30 @@ a{
     align-items: center;
     margin-bottom: var(--mb-3);
 }
+
+.git-prof-left-container{
+    width: 6.5rem;
+}
+.git-prof-right-container{
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    width: 15rem;
+}
+.gitProPic{
+    /* position: absolute;
+    margin-top: 15px; */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--text-color);
+}
+.git-username{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
