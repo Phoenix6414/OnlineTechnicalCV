@@ -376,17 +376,22 @@ a{
 }
 .git-prof-right-container{
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 11rem;
     margin-left: 8rem;
     width: 15rem;
 }
 .gitProPic{
     /* position: absolute;
     margin-top: 15px; */
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
-    border: 5px solid var(--text-color);
+    
+}
+img{
+    height: 98px;
+    width: 98px;
+    border-radius: 50%;
 }
 .git-username{
     font-size: var(--h3-font-size);
@@ -394,6 +399,10 @@ a{
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
     letter-spacing: .35rem;
-    text-align: center;
+    
     margin-bottom: var(--mb-3);
 }
+.git-ff-grid{
+    grid-template-columns: repeat(2, 3fr);
+}
+
