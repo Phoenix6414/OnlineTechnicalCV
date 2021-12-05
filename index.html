@@ -30,11 +30,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#profile" class="nav-link">
-                            <i class='bx bxs-user nav-icon'></i>Profile
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#education" class="nav-link">
                             <i class='bx bxs-graduation nav-icon'></i>Education
                         </a>
@@ -47,6 +42,11 @@
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">
                             <i class='bx bxs-brain nav-icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#github" class="nav-link">
+                            <i class='bx bxl-github nav-icon'></i>GitHub
                         </a>
                     </li>
                     <li class="nav-item">
@@ -88,6 +88,12 @@
                             <span class="home-info">
                                 <i class='bx bxs-phone home-icon'></i>My phone
                             </span>
+                            <span class="home-info">
+                                <i class='bx bxl-linkedin-square home-icon'></i>LinkedIn
+                            </span>
+                            <span class="home-info">                            
+                                <i class='bx bxl-github home-icon' id="btnRepo"></i>GitHub
+                        </span>
                         </div>
 
                         <!-- <div class="home-add grid">
@@ -108,7 +114,7 @@
 
                 <!-- dark/light theme -->
                 <section class="section" id="skills">
-                    <h2 class="section-title-noSpace">Skills</h2>
+                    <h2 class="section-title-noSpace" style="padding-top: 2.5rem">Skills</h2>
                     <div class="skills-content grid">
                         <ul class="skill-data">
                             <li class="skill-name">
@@ -159,11 +165,25 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="skills-content grid">
-                        <h2 class="section-title-noSpace">My Repo</h2>
-                        <span class="git-icon">                            
-                                <i class='bx bxl-github' id="btnRepo"></i>                            
-                        </span>                                 
+                    <div class="skills-content grid" id="github" onloadstart="getInto();">
+                        <h2 class="section-title">My GitHub</h2>                        
+                        <div class="git-prof-left-container">
+                            <div class="gitProPic" id="gitProPic"></div>
+                        </div>
+                        <div class="git-prof-right-container">
+                            <div class="git-username">
+                                <p id="gitUsername"></p>
+                            </div>
+                            <div class="git-bio">
+                                <p id=gitBio></p>
+                            </div>
+                            <div class="git-info">
+                                <ul>
+                                    <li id="followers"></li>
+                                    <li id="following"></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -321,7 +341,20 @@
 
     </main>
 
-
+    <script>
+        function getInto(){
+            const name = 'Phoenix6414'
+            fetch(`https://api.github.com/users/${name}`)
+            .then(response=>response.json().then(data=>{
+                console.log(data)
+                document.getElementById('gitUsername').innerHTML=data.name;
+                document.getElementById('gitBio').innerHTML=data.bio;
+                document.getElementById('followers').innerHTML=data.followers + " Followers";
+                document.getElementById('follwoing').innerHTML=data.following + " Following";
+                document.getElementById('gitProPic').innerHTML=`<img src="${data.avatar_url}" />`
+            }))
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="resources/js/main.js"></script>
